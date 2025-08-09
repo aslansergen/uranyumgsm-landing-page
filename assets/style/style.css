@@ -215,18 +215,20 @@ main .example_works .example_works_container {
   width: 100%;
   height: 620px;
   display: flex;
+  gap: 10px;
   overflow-x: scroll;
+  /* WebKit/Blink (Chrome/Edge) */
   scrollbar-width: thin;
-  scrollbar-color: #666 #f0f0f0;
+  scrollbar-color: #0ea5e9 #f0f0f0;
 }
 main .example_works .example_works_container::-webkit-scrollbar:horizontal {
-  height: 16px;
+  height: 26px;
 }
 main .example_works .example_works_container::-webkit-scrollbar-track:horizontal {
   background: #f0f0f0;
 }
 main .example_works .example_works_container::-webkit-scrollbar-thumb:horizontal {
-  background-color: #666;
+  background-color: #fb0909;
   border-radius: 8px;
 }
 main .example_works .example_works_container::-webkit-scrollbar-thumb:horizontal:hover {
@@ -776,7 +778,6 @@ main .contact_information .contact_detail .workin_hours svg {
     margin-top: 0;
   }
 }
-/* 1) Sayfayı body scroll etsin; nested scroll'u kapat */
 html, body {
   min-height: 100%;
   height: auto !important;
@@ -784,14 +785,13 @@ html, body {
   overflow-y: visible !important;
 }
 
-/* 2) main container: 100% yerine min-height; iOS momentum scroll ve alt boşluk */
 main {
   min-height: 100%;
   height: auto !important;
   overflow-x: hidden !important;
-  overflow-y: visible !important; /* body kaydırsın */
-  -webkit-overflow-scrolling: touch; /* iOS momentum */
-  padding-bottom: 100px; /* footer yoksa bile scroll alanı */
-  background-color: transparent !important; /* mevcut 'red'i nötrle */
+  overflow-y: visible !important;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 100px;
+  background-color: transparent !important;
   margin-bottom: 0 !important;
 }/*# sourceMappingURL=style.css.map */
