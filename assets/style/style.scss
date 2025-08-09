@@ -274,6 +274,7 @@ main{
             position: relative;
             margin-bottom: 190px;
             .description_content{
+                border-radius: 10px;
                 position: absolute;
                 left: 30px;
                 bottom: -70px;
@@ -299,6 +300,7 @@ main{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                border-radius: 10px;
             }
         }
         .batarya_degisimi{

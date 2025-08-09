@@ -263,6 +263,7 @@ main .our_other_works .other_works {
   margin-bottom: 190px;
 }
 main .our_other_works .other_works .description_content {
+  border-radius: 10px;
   position: absolute;
   left: 30px;
   bottom: -70px;
@@ -289,6 +290,7 @@ main .our_other_works .other_works img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 main .our_other_works .batarya_degisimi {
   margin-top: -20px;
