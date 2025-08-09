@@ -223,21 +223,15 @@ main{
             display: flex;
             gap: 10px;
             overflow-x: scroll;
-
-            /* WebKit/Blink (Chrome/Edge) */
-            &::-webkit-scrollbar:horizontal { height: 26px; }   // <-- yükseklik burada
+            &::-webkit-scrollbar:horizontal { height: 26px; }
             &::-webkit-scrollbar-track:horizontal { background: #f0f0f0; }
             &::-webkit-scrollbar-thumb:horizontal {
                 background-color: #fb0909;
                 border-radius: 8px;
             }
             &::-webkit-scrollbar-thumb:horizontal:hover { background-color: #444; }
-
-
             scrollbar-width: thin;
             scrollbar-color: #0ea5e9 #f0f0f0;
-            
-            
             .works{
                 min-width: 270px;
                 height: 600px;
@@ -502,7 +496,7 @@ main{
                 font-size: 24px;
             }
             .example_works_container{
-                height: 500px;
+                height: 515px;
                 .works{
                     min-width: 220px;
                     height: 500px;
@@ -572,7 +566,7 @@ main{
         }
         .example_works{
             .example_works_container{
-                height: 360px;
+                height: 365px;
                 .works{
                     min-width: 220px;
                     height: 350px;
@@ -835,6 +829,16 @@ main{
             }
             .batarya_degisimi{
                 margin-top: 0;
+            }
+        }
+        .example_works{
+            .example_works_container{
+                height: 600px;
+                .works{
+                    min-width: 310px;
+                    height: 590px;
+                    width: 100%;
+                }
             }
         }
     }

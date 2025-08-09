@@ -217,7 +217,6 @@ main .example_works .example_works_container {
   display: flex;
   gap: 10px;
   overflow-x: scroll;
-  /* WebKit/Blink (Chrome/Edge) */
   scrollbar-width: thin;
   scrollbar-color: #0ea5e9 #f0f0f0;
 }
@@ -488,7 +487,7 @@ main .contact_information .contact_detail .workin_hours svg {
     font-size: 24px;
   }
   main .example_works .example_works_container {
-    height: 500px;
+    height: 515px;
   }
   main .example_works .example_works_container .works {
     min-width: 220px;
@@ -542,7 +541,7 @@ main .contact_information .contact_detail .workin_hours svg {
     width: 50px;
   }
   main .example_works .example_works_container {
-    height: 360px;
+    height: 365px;
   }
   main .example_works .example_works_container .works {
     min-width: 220px;
@@ -776,6 +775,14 @@ main .contact_information .contact_detail .workin_hours svg {
   }
   main .our_other_works .batarya_degisimi {
     margin-top: 0;
+  }
+  main .example_works .example_works_container {
+    height: 600px;
+  }
+  main .example_works .example_works_container .works {
+    min-width: 310px;
+    height: 590px;
+    width: 100%;
   }
 }
 html, body {
