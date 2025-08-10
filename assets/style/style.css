@@ -603,27 +603,32 @@ main .contact_information .contact_detail .workin_hours svg {
   }
 }
 @media (max-width: 992px) {
+  main .slider_container {
+    flex-direction: column;
+    align-items: center;
+  }
   main .slider_container .info_container {
     width: 100%;
-    justify-content: flex-start;
+    position: relative;
+    align-items: center;
   }
   main .slider_container .info_container h1 {
-    font-size: 25px;
-    line-height: 30px;
-    text-align: left;
+    font-size: 30px;
+    margin-bottom: 0;
+    line-height: 37px;
   }
   main .slider_container .info_container p {
     font-size: 20px;
-    width: 56%;
-    margin-top: 55px;
+    width: 100%;
+    margin-top: 20px;
   }
   main .slider_container .info_container a {
-    font-size: 18px;
+    font-size: 14px;
   }
   main .slider_container .slide_image {
-    margin-top: 50px;
-    width: 55%;
-    margin-left: 50%;
+    margin-top: 47px;
+    width: 420px;
+    margin-left: 0;
   }
   main .advantages_container {
     padding-top: 0;
