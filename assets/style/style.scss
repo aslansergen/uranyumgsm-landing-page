@@ -44,6 +44,17 @@ body{
         transform: translateY(-5px);
     }
 }
+@keyframes slide {
+    0% {
+      transform: scale(1) translateX(0);
+    }
+    50% {
+      transform: scale(0.8) translateX(0);
+    }
+    100% {
+      transform: scale(0.8) translateX(-60px); 
+    }
+  }
 
 $white: #ffffff;
 
@@ -212,10 +223,25 @@ main{
     }
     .example_works{
         margin-top: 60px;
+        position: relative;
         h2{
             color: black;
             font-size: 30px;
             margin-bottom: 25px;
+        }
+        .scroll_animation{
+            position: absolute;
+            display: none;
+            width: 150px;
+            height: 150px;
+            opacity: .8; 
+            path{
+                stroke: #ff2121;
+                stroke-width: 1;
+                fill: none; 
+
+            }
+            /* animation: slide 2s ease .5s forwards infinite; */
         }
         .example_works_container{
             width: 100%;
@@ -688,6 +714,13 @@ main{
                 }
             }
         }
+        .example_works{
+            .scroll_animation{
+                display: flex;
+                left: 24dvh;
+                top: 150px;
+            }
+        }
         .about_us_container{
             h2{
                 margin-top: 60px;
@@ -832,6 +865,12 @@ main{
             }
         }
         .example_works{
+            .scroll_animation{
+                left: 25dvh;
+                top: 250px;
+                width: 150px;
+                height: 150px;
+            }
             .example_works_container{
                 height: 600px;
                 .works{

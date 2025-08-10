@@ -40,6 +40,17 @@ body {
     transform: translateY(-5px);
   }
 }
+@keyframes slide {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: scale(0.8) translateX(0);
+  }
+  100% {
+    transform: scale(0.8) translateX(-60px);
+  }
+}
 svg.svg_icon path {
   stroke: #0ea5e9;
   stroke-width: 8;
@@ -205,11 +216,25 @@ main .how_to_do_it .video_description p {
 }
 main .example_works {
   margin-top: 60px;
+  position: relative;
 }
 main .example_works h2 {
   color: black;
   font-size: 30px;
   margin-bottom: 25px;
+}
+main .example_works .scroll_animation {
+  position: absolute;
+  display: none;
+  width: 150px;
+  height: 150px;
+  opacity: 0.8;
+  /* animation: slide 2s ease .5s forwards infinite; */
+}
+main .example_works .scroll_animation path {
+  stroke: #ff2121;
+  stroke-width: 1;
+  fill: none;
 }
 main .example_works .example_works_container {
   width: 100%;
@@ -650,6 +675,11 @@ main .contact_information .contact_detail .workin_hours svg {
   main .how_to_do_it .video_description h2 {
     margin-bottom: 5px;
   }
+  main .example_works .scroll_animation {
+    display: flex;
+    left: 24dvh;
+    top: 150px;
+  }
   main .about_us_container h2 {
     margin-top: 60px;
     margin-bottom: 15px;
@@ -775,6 +805,12 @@ main .contact_information .contact_detail .workin_hours svg {
   }
   main .our_other_works .batarya_degisimi {
     margin-top: 0;
+  }
+  main .example_works .scroll_animation {
+    left: 25dvh;
+    top: 250px;
+    width: 150px;
+    height: 150px;
   }
   main .example_works .example_works_container {
     height: 600px;
