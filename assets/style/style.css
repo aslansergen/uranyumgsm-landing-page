@@ -85,6 +85,7 @@ main .slider_container {
   display: flex;
   justify-content: space-between;
   position: relative;
+  border: 1px sxlid red;
 }
 main .slider_container .info_container {
   width: 53%;
@@ -123,6 +124,7 @@ main .slider_container .info_container a {
 main .slider_container .slide_image {
   width: 50%;
   margin-left: 50%;
+  border: 1px solid blue;
 }
 main .advantages_container {
   margin-top: 120px;
