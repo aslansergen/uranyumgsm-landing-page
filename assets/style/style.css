@@ -517,7 +517,7 @@ main .example_works .scroll_animation {
   position: absolute;
   display: none;
   opacity: 0.8;
-  /*    animation: slide 2s ease .5s forwards infinite; */
+  animation: slide 2s ease 0.5s forwards infinite;
 }
 main .example_works .scroll_animation path {
   stroke: #ff2121;
@@ -1047,7 +1047,7 @@ main .contact_information .contact_detail .workin_hours svg {
     width: 70px;
     height: 80px;
     bottom: 20px;
-    /*  animation: slide 2s ease .5s forwards infinite; */
+    animation: slide 2s ease 0.5s forwards infinite;
   }
   main .about_us_container .image_container_content .scroll_animation path {
     stroke: #ff2121;

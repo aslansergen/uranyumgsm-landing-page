@@ -1,0 +1,21 @@
+main .example_works .scroll_animation{
+  display: none !important;
+}
+
+main .about_us_container .image_container_content .scroll_animation{
+  display: none !important;
+}
+
+main .slider_container .slide_image .screen_container .right_ekran{
+  animation: none !important;
+}
+
+main .slider_container .slide_image .screen_container .left_oncam{
+  animation: none !important;
+}
+
+.bubble,.cta-btn,
+.cta-btn::after,
+main .how_to_do_it .video_content .play_icon{
+  animation: none !important;
+}
