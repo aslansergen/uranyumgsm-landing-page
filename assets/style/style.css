@@ -642,6 +642,9 @@ main .about_us_container .description_content {
 main .about_us_container .image_container_content {
   width: 55%;
 }
+main .about_us_container .image_container_content svg {
+  display: none;
+}
 main .about_us_container .image_container_content .about_us_big_image {
   width: 100%;
   height: 400px;
@@ -657,8 +660,34 @@ main .about_us_container .image_container_content .about_us_small_image_containe
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  height: 150px;
-  overflow-y: scroll;
+  height: 170px;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #0ea5e9 #f0f0f0;
+}
+main .about_us_container .image_container_content .about_us_small_image_container::-webkit-scrollbar:horizontal {
+  height: 26px;
+}
+main .about_us_container .image_container_content .about_us_small_image_container::-webkit-scrollbar-track:horizontal {
+  background: #f0f0f0;
+}
+main .about_us_container .image_container_content .about_us_small_image_container::-webkit-scrollbar-thumb:horizontal {
+  background-color: #fb0909;
+  border-radius: 8px;
+}
+main .about_us_container .image_container_content .about_us_small_image_container::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: #444;
+}
+main .about_us_container .image_container_content .about_us_small_image_container .works {
+  min-width: 270px;
+  height: 600px;
+}
+main .about_us_container .image_container_content .about_us_small_image_container .works img {
+  width: 110%;
+  height: 50%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .about_us_container .image_container_content .about_us_small_image_container .scroll_animation {
   display: none;
