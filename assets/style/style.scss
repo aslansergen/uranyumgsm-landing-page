@@ -91,14 +91,11 @@ main{
     .slider_container{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
         position: relative;
         .info_container{
-            width: 53%;
+            width: 56%;
             height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -128,11 +125,41 @@ main{
             }
         }
         .slide_image{
-            width: 50%;
-            margin-left: 50%;
+            width: 44%;
+            height: 620px;
             border: 1px solid blue;
+            position: relative;
+            .screen_container{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .left_oncam{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    border: 1px solid red;
+                }
+                .right_ekran{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                }
+            }
+            .on_cam{
+                position: absolute;
+                top: 30px;
+                left: -60px;
+                width: 240px;
+               /*  border: 1px solid red; */
+            }
+            .dokunmatik_ekran{
+                position: absolute;
+                width: 280px;
+                right: 0;
+                top: 0;
+            }
         }
-        border: 1px sxlid red ;
+        border: 2px solid red;
     }
     .advantages_container{
         margin-top: 120px;

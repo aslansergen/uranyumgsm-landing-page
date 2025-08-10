@@ -83,16 +83,13 @@ main {
 main .slider_container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   position: relative;
-  border: 1px sxlid red;
+  border: 2px solid red;
 }
 main .slider_container .info_container {
-  width: 53%;
+  width: 56%;
   height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,9 +119,39 @@ main .slider_container .info_container a {
   background-color: #2C85FF;
 }
 main .slider_container .slide_image {
-  width: 50%;
-  margin-left: 50%;
+  width: 44%;
+  height: 620px;
   border: 1px solid blue;
+  position: relative;
+}
+main .slider_container .slide_image .screen_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .slider_container .slide_image .screen_container .left_oncam {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid red;
+}
+main .slider_container .slide_image .screen_container .right_ekran {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+main .slider_container .slide_image .on_cam {
+  position: absolute;
+  top: 30px;
+  left: -60px;
+  width: 240px;
+  /*  border: 1px solid red; */
+}
+main .slider_container .slide_image .dokunmatik_ekran {
+  position: absolute;
+  width: 280px;
+  right: 0;
+  top: 0;
 }
 main .advantages_container {
   margin-top: 120px;
