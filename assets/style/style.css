@@ -349,20 +349,20 @@ main .about_us_container .description_content {
   padding-right: 25px;
   line-height: 32px;
 }
-main .about_us_container .image_container {
+main .about_us_container .image_container_content {
   width: 55%;
 }
-main .about_us_container .image_container .about_us_big_image {
+main .about_us_container .image_container_content .about_us_big_image {
   width: 100%;
   height: 400px;
 }
-main .about_us_container .image_container .about_us_big_image img {
+main .about_us_container .image_container_content .about_us_big_image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .about_us_container .image_container .about_us_small_image_container {
+main .about_us_container .image_container_content .about_us_small_image_container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -370,15 +370,18 @@ main .about_us_container .image_container .about_us_small_image_container {
   height: 150px;
   overflow-y: scroll;
 }
-main .about_us_container .image_container .about_us_small_image_container .image_container {
+main .about_us_container .image_container_content .about_us_small_image_container .scroll_animation {
+  display: none;
+}
+main .about_us_container .image_container_content .about_us_small_image_container .image_container {
   min-width: 150px;
   height: 150px;
   overflow: hidden;
 }
-main .about_us_container .image_container .about_us_small_image_container .image_container:hover .small_image {
+main .about_us_container .image_container_content .about_us_small_image_container .image_container:hover .small_image {
   transform: scale(1.1);
 }
-main .about_us_container .image_container .about_us_small_image_container .image_container .small_image {
+main .about_us_container .image_container_content .about_us_small_image_container .image_container .small_image {
   transition: 0.3s ease;
   width: 100%;
   height: 100%;
@@ -690,9 +693,31 @@ main .contact_information .contact_detail .workin_hours svg {
     order: 3;
     line-height: 25px;
   }
-  main .about_us_container .image_container {
+  main .about_us_container .image_container_content {
     width: 100%;
     order: 2;
+    position: relative;
+  }
+  main .about_us_container .image_container_content .about_us_small_image_container {
+    height: 180px;
+  }
+  main .about_us_container .image_container_content .about_us_small_image_container .image_container {
+    min-width: 220px;
+    height: 170px;
+  }
+  main .about_us_container .image_container_content .scroll_animation {
+    display: flex;
+    position: absolute;
+    left: 24dvh;
+    width: 70px;
+    height: 80px;
+    bottom: 20px;
+    /*  animation: slide 2s ease .5s forwards infinite; */
+  }
+  main .about_us_container .image_container_content .scroll_animation path {
+    stroke: #ff2121;
+    stroke-width: 1;
+    fill: none;
   }
   main .contact_information h2 {
     font-size: 25px;

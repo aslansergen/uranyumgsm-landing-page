@@ -236,7 +236,7 @@ main{
             path{
                 stroke: #ff2121;
                 stroke-width: 1;
-                fill: none; 
+                fill: none;
 
             }
          /*    animation: slide 2s ease .5s forwards infinite; */
@@ -348,7 +348,7 @@ main{
             padding-right: 25px;
             line-height: 32px;
         }
-        .image_container{
+        .image_container_content{
             width: 55%;
             .about_us_big_image{
                 width: 100%;
@@ -366,6 +366,9 @@ main{
                 width: 100%;
                 height: 150px;
                 overflow-y: scroll;
+                .scroll_animation{
+                    display: none;
+                }
                 .image_container{
                     min-width: 150px;
                     height: 150px;
@@ -732,9 +735,31 @@ main{
                 order: 3;
                 line-height: 25px;
             }
-            .image_container{
+            .image_container_content{
                 width: 100%;
                 order: 2;
+                position: relative;
+                .about_us_small_image_container{
+                    height: 180px;
+                    .image_container{
+                        min-width: 220px;
+                        height: 170px;
+                    }
+                }
+                .scroll_animation{
+                    display: flex;
+                    position: absolute;
+                    left: 24dvh;
+                    width: 70px;
+                    height: 80px;
+                    bottom: 20px;
+                    path{
+                        stroke: #ff2121;
+                        stroke-width: 1;
+                        fill: none;
+                    }
+                    /*  animation: slide 2s ease .5s forwards infinite; */
+                }
             }
         }
         .contact_information{
