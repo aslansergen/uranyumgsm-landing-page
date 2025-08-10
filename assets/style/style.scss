@@ -232,8 +232,6 @@ main{
         .scroll_animation{
             position: absolute;
             display: none;
-            width: 150px;
-            height: 150px;
             opacity: .8; 
             path{
                 stroke: #ff2121;
@@ -241,7 +239,7 @@ main{
                 fill: none; 
 
             }
-            /* animation: slide 2s ease .5s forwards infinite; */
+         /*    animation: slide 2s ease .5s forwards infinite; */
         }
         .example_works_container{
             width: 100%;
@@ -718,7 +716,9 @@ main{
             .scroll_animation{
                 display: flex;
                 left: 24dvh;
-                top: 150px;
+                width: 70px;
+                height: 80px;
+                bottom: 20px;
             }
         }
         .about_us_container{
@@ -867,9 +867,9 @@ main{
         .example_works{
             .scroll_animation{
                 left: 25dvh;
-                top: 250px;
-                width: 150px;
-                height: 150px;
+                bottom: 45px;
+                width: 95px;
+                height: 115px;
             }
             .example_works_container{
                 height: 600px;

@@ -226,10 +226,8 @@ main .example_works h2 {
 main .example_works .scroll_animation {
   position: absolute;
   display: none;
-  width: 150px;
-  height: 150px;
   opacity: 0.8;
-  /* animation: slide 2s ease .5s forwards infinite; */
+  /*    animation: slide 2s ease .5s forwards infinite; */
 }
 main .example_works .scroll_animation path {
   stroke: #ff2121;
@@ -678,7 +676,9 @@ main .contact_information .contact_detail .workin_hours svg {
   main .example_works .scroll_animation {
     display: flex;
     left: 24dvh;
-    top: 150px;
+    width: 70px;
+    height: 80px;
+    bottom: 20px;
   }
   main .about_us_container h2 {
     margin-top: 60px;
@@ -808,9 +808,9 @@ main .contact_information .contact_detail .workin_hours svg {
   }
   main .example_works .scroll_animation {
     left: 25dvh;
-    top: 250px;
-    width: 150px;
-    height: 150px;
+    bottom: 45px;
+    width: 95px;
+    height: 115px;
   }
   main .example_works .example_works_container {
     height: 600px;
