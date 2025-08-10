@@ -8,7 +8,7 @@
     <title>Uranyum Gsm </title>
     <link rel="stylesheet" href="./assets/style/bootstrap-grid.css">
     <link rel="stylesheet" href="./assets/style/style.css">
-    <link rel="stylesheet" href="./assets/style/silme.css">
+<!--     <link rel="stylesheet" href="./assets/style/silme.css"> -->
 </head>
 <body>
 
@@ -357,7 +357,23 @@
     icons.forEach(icon => {
         observer.observe(icon);
     });
-    
+
+    const otherWorks = document.querySelectorAll('.other_works');
+    const otherWorksObserver = new IntersectionObserver(
+        (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            }
+        });
+        },
+        {
+        threshold: 0.8
+        }
+    );
+    otherWorks.forEach(icon => {
+        otherWorksObserver.observe(icon);
+    });    
     
     document.getElementById('example_works_container').addEventListener('scroll', function() {
         console.log('Sayfa scroll oldu. Scroll pozisyonu:', window.scrollY);

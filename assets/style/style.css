@@ -607,10 +607,27 @@ main .our_other_works .other_works .description_content .desc {
   font-weight: 400;
   padding: 0 10px;
 }
+main .our_other_works .other_works.active img {
+  animation: revealBox 0.7s ease forwards;
+  animation-delay: 0.4s;
+}
+main .our_other_works .other_works.active .box {
+  animation: revealBox 0.5s ease forwards;
+}
+main .our_other_works .other_works.active .box:nth-child(1) {
+  background: #6E96E6;
+  animation-delay: 0s;
+}
+main .our_other_works .other_works.active .box:nth-child(2) {
+  background: #936EE6;
+  animation-delay: 0.2s;
+}
+main .our_other_works .other_works.active .box:nth-child(3) {
+  background: #6E70E6;
+  animation-delay: 0.4s;
+}
 main .our_other_works .other_works img {
   clip-path: inset(0 100% 0 0);
-  animation: revealBox 0.7s ease forwards;
-  animation-delay: 0.5s;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -625,19 +642,6 @@ main .our_other_works .other_works .box {
   height: 100%;
   width: 100%;
   clip-path: inset(0 100% 0 0);
-  animation: revealBox 0.5s ease forwards;
-}
-main .our_other_works .other_works .box:nth-child(1) {
-  background: #6E96E6;
-  animation-delay: 0s;
-}
-main .our_other_works .other_works .box:nth-child(2) {
-  background: #936EE6;
-  animation-delay: 0.2s;
-}
-main .our_other_works .other_works .box:nth-child(3) {
-  background: #6E70E6;
-  animation-delay: 0.4s;
 }
 main .our_other_works .batarya_degisimi {
   margin-top: -20px;
