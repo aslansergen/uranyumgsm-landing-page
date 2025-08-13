@@ -371,9 +371,15 @@ main .popUp {
   opacity: 0;
   z-index: -99;
 }
+@media (max-width: 768px) {
+  main .popUp {
+    left: -10px;
+    width: calc(100vw + 10px);
+  }
+}
 main .popUp .popUp_close {
   position: absolute;
-  top: 20px;
+  top: 60px;
   right: 15px;
   width: 60px;
   height: 35px;
@@ -448,7 +454,7 @@ main .popUp .video_content {
   transition: 0.3s ease;
 }
 main .popUp .video_content iframe {
-  width: auto;
+  width: 100%;
   height: 100%;
 }
 main .slider_container {
