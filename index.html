@@ -337,10 +337,22 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.607815146564!2d28.321387783925584!3d37.91622863168984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b8b909d730bae5%3A0xb5f48fbb3c935f40!2sUranyum%20GSM%20PC!5e0!3m2!1str!2str!4v1754418803413!5m2!1str!2str"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
+        <section class="popUp">
+            <div class="slide_1"></div>
+            <div class="slide_2"></div> 
+            <div class="slide_3"></div>
+        </section>
     </main>
     <script src="./assets/script/app.js"></script>
 
 <script>
+    const watch = document.querySelector('.play_icon');
+    const popUp = document.querySelector('.popUp');
+    watch.addEventListener('click',function(){
+        console.log('lan lun pat küt');
+        popUp.classList.add('active');
+    });
+
     const icons = document.querySelectorAll('.svg_icon');
     const observer = new IntersectionObserver(
         (entries) => {
