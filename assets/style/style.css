@@ -31,7 +31,6 @@ body {
   display: none !important;
 }
 
-/* === iOS scroll ve yükseklik düzeltmeleri — EK BLOK === */
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -56,23 +55,27 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.03);
+    transform: scale(1.05);
   }
 }
 @keyframes appears {
   0% {
     transform: rotate(45deg) scale(0.5);
+    opacity: 0;
   }
   100% {
+    opacity: 1;
     transform: rotate(0) scale(1);
   }
 }
 @keyframes appears2 {
   0% {
     transform: rotate(-45deg) scale(0.5);
+    opacity: 0;
   }
   100% {
     transform: rotate(0) scale(1);
+    opacity: 1;
   }
 }
 svg.svg_icon path {
@@ -424,6 +427,8 @@ main .slider_container .slide_image .on_cam {
   left: -60px;
   width: 240px;
   animation: appears 0.5s ease forwards;
+  animation-delay: 1.3s;
+  opacity: 0;
 }
 main .slider_container .slide_image .dokunmatik_ekran {
   position: absolute;
@@ -431,6 +436,8 @@ main .slider_container .slide_image .dokunmatik_ekran {
   right: 0;
   top: 0;
   animation: appears2 0.5s ease forwards;
+  animation-delay: 1.3s;
+  opacity: 0;
 }
 main .advantages_container {
   margin-top: 120px;
