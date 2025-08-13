@@ -344,8 +344,9 @@ main{
             width: 100%;
             height: 100%;
             transition: .3s ease;
+            background: black;
             iframe{
-                width: 100%;
+                width: 75%;
                 height: 100%;
             }
           
@@ -1018,6 +1019,12 @@ main{
         padding-top: 20px;
     }
     main{
+        .popUp{
+            .popUp_close{
+                right: 4px;
+                width: 50px;
+            }
+        }
         padding: 0 10px;
         .slider_container{
            flex-direction: column;
@@ -1076,7 +1083,9 @@ main{
                 width: 100%;
                 margin-top: 0;
                 .play_icon{
-                    width: 50px;
+                    left: calc(50% - 40px);
+                    top: calc(50% - 40px);
+                    width: 80px; 
                 }
             }
             .video_description{

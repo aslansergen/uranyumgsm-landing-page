@@ -452,9 +452,10 @@ main .popUp .video_content {
   width: 100%;
   height: 100%;
   transition: 0.3s ease;
+  background: black;
 }
 main .popUp .video_content iframe {
-  width: 100%;
+  width: 75%;
   height: 100%;
 }
 main .slider_container {
@@ -1104,6 +1105,10 @@ main .contact_information .contact_detail .workin_hours svg {
   main {
     padding: 0 10px;
   }
+  main .popUp .popUp_close {
+    right: 4px;
+    width: 50px;
+  }
   main .slider_container {
     flex-direction: column;
     align-items: center;
@@ -1160,7 +1165,9 @@ main .contact_information .contact_detail .workin_hours svg {
     margin-top: 0;
   }
   main .how_to_do_it .video_content .play_icon {
-    width: 50px;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+    width: 80px;
   }
   main .how_to_do_it .video_description {
     margin-top: 15px;
