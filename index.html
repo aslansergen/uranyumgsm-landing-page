@@ -341,6 +341,10 @@
             <div class="slide_1"></div>
             <div class="slide_2"></div> 
             <div class="slide_3"></div>
+            <div class="video_content">
+                <button class="popUp_close">Kapat</button>
+                <iframe  src="https://www.youtube.com/embed/_MitHoqH8L4?si=Nt9XsqVzHj5hxQV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
     <script src="./assets/script/app.js"></script>
@@ -348,9 +352,17 @@
 <script>
     const watch = document.querySelector('.play_icon');
     const popUp = document.querySelector('.popUp');
+    const popUpClose = document.querySelector('.popUp_close');
+    
     watch.addEventListener('click',function(){
-        console.log('lan lun pat küt');
         popUp.classList.add('active');
+        popUp.classList.add('animation');
+    });
+    popUpClose.addEventListener('click',function(){
+        popUp.classList.remove('animation');
+        setTimeout(() => {
+            popUp.classList.remove('active');
+        }, 1000);
     });
 
     const icons = document.querySelectorAll('.svg_icon');

@@ -263,6 +263,12 @@ svg.svg_icon path {
 .none{
     display: none !important;
 }
+.ytmVideoInfoVideoDetailsContainer{
+    display: none !important;
+    border: 3px solid blue ;
+    opacity: 0;
+}   
+
 
 main{
     margin-bottom: 100px;
@@ -273,17 +279,35 @@ main{
         height: 100dvh;
         opacity: 0;
         z-index: -99;
+        .popUp_close{
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            width: 60px;
+            height: 35px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            background: transparent;
+            color: white;
+        }
         &.active {
             opacity: 1;
             z-index: 1;
+        }
+        &.animation {
             .slide_1 { top: 0; transition-delay: 0s; }
             .slide_2 { top: 0; transition-delay: .2s; }
             .slide_3 { top: 0; transition-delay: .4s; }
-          }
-          &:not(.active) {
-            .slide_1 { top: -100%; transition-delay: .4s; }
-            .slide_2 { top: -100%; transition-delay: .2s; }
-            .slide_3 { top: -100%; transition-delay: 0s; }
+            .video_content{
+                top: 0;
+                opacity: 1;
+                transition-delay: .6s;
+            }
+        }
+        &:not(.animation) {
+            .slide_1 { top: -100%; transition-delay: .6s; }
+            .slide_2 { top: -100%; transition-delay: .4s; }
+            .slide_3 { top: -100%; transition-delay: .3s; }
         }
         .slide_1,
         .slide_2,
@@ -305,6 +329,22 @@ main{
         .slide_3{
             z-index: 3;
             background: #6E70E6;
+        }
+        .video_content{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 20%;
+            opacity: 0;
+            z-index: 4;
+            width: 100%;
+            height: 100%;
+            transition: .3s ease;
+            iframe{
+                width: auto;
+                height: 100%;
+            }
+          
         }
     }
     .slider_container{
